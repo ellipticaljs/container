@@ -1,0 +1,23 @@
+{
+  "name": "elliptical-container",
+  "description": "An es6 Map dependency injection container",
+  "main": "dist/elliptical.container.js",
+  "authors": [
+    "S. Francis"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "dependency",
+    "injection"
+  ],
+  "homepage": "https://github.com/tachyon1337/elliptical-container",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
