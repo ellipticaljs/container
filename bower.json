@@ -1,7 +1,7 @@
 {
   "name": "elliptical-container",
   "description": "An es6 Map dependency injection container",
-  "version":"1.0.1",
+  "version":"1.0.3",
   "main": "dist/elliptical.container.js",
   "authors": [
     "S. Francis"
@@ -12,7 +12,7 @@
     "dependency",
     "injection"
   ],
-  "homepage": "https://github.com/tachyon1337/elliptical-container",
+  "homepage": "https://github.com/ellipticaljs/container",
   "moduleType": [],
   "ignore": [
     "**/.*",

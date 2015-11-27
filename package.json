@@ -1,12 +1,12 @@
 {
   "name": "elliptical-container",
   "description": "An es6 Map dependency injection container",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "author": "S. Francis",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tachyon1337/elliptical-container.git"
+    "url": "https://github.com/ellipticaljs/container.git"
   },
   "devDependencies": {
     "gulp": "^3.8.7",
