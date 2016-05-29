@@ -58,6 +58,7 @@
          */
         registerType:function(name,type){
             var container=this._registrations.container;
+            type[this.classNameProp]=name;
             container.set(name,type);
         },
 
