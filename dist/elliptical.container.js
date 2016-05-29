@@ -58,7 +58,13 @@
          */
         registerType:function(name,type){
             var container=this._registrations.container;
-            type[this.classNameProp]=name;
+            try{
+                if(type.constructor && type.constructor instanceof Function) type.constructor[this.classNameProp]=name;
+                else type[this.classNameProp]=name;
+            }catch(ex){
+                type[this.classNameProp]=name;
+            }
+            
             container.set(name,type);
         },
 
