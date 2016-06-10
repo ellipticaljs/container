@@ -22,12 +22,13 @@
     } else {
         // Browser globals (root is window)
         root.elliptical = root.elliptical || {};
-        root.elliptical.Container=factory();
-        root.returnExports = root.elliptical.Container;
+        root.elliptical.container=factory(elliptical.utils);
+        root.returnExports = root.elliptical.container;
     }
-}(this, function () {
+}(this, function (utils) {
     var GET_TYPE_MAX_COUNT=6;
     var GET_TYPE_INTERVAL=250;
+    var native=utils.native;
 
     return {
         _registrations:{
@@ -48,7 +49,7 @@
 
         //overwritable defaultType extend method, called on the defaultType before returning
         extend:function(type){
-            return type.extend({}, {});
+            return native.extends(type);
         },
 
         /**
@@ -64,7 +65,7 @@
             }catch(ex){
                 type[this.classNameProp]=name;
             }
-            
+
             container.set(name,type);
         },
 
