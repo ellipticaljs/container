@@ -128,6 +128,7 @@
                         count++;
                     }else{
                         clearInterval(timeoutId);
+                        callback(null);
                     }
                 },GET_TYPE_INTERVAL);
             }
