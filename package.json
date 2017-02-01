@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/ellipticaljs/container.git"
   },
+  "dependencies": {
+    "elliptical-utils": "git+https://github.com/ellipticaljs/utils.git"
+  },
   "devDependencies": {
     "gulp": "^3.8.7",
     "gulp-util": "^2.2.14",
